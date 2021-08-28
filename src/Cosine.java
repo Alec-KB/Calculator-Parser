@@ -28,9 +28,9 @@ public class Cosine extends Operator{
     public String toString(){
         if(initialised) {
             if(singleton){
-                return "Cosine(" + operand.toString() + ")";
+                return "" + operand.toString() + "";
             } else {
-                return "Cosine(cos(" + operand.toString() + "))";
+                return "(cos(" + operand.toString() + "))";
             }
         } else{
             return "cos";

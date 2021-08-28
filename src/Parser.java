@@ -112,8 +112,6 @@ public class Parser {
             shift(10);
         } else if(current instanceof EndToken){
             output = seen.pop();
-            System.out.println("Done");
-            //System.out.println(output);
         } else if(((Operator) current).initialised){
             shiftNoStack(1);
 

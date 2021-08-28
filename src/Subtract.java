@@ -30,9 +30,9 @@ public class Subtract extends Operator{
     public String toString(){
         if(initialised) {
             if(singleton){
-                return "Subtract(" + operand1.toString() + ")";
+                return "" + operand1.toString() + "";
             } else {
-                return "Subtract(" + operand1.toString() + "-" + operand2.toString() + ")";
+                return "(" + operand1.toString() + "-" + operand2.toString() + ")";
             }
         }
         else{ return "-";}    }

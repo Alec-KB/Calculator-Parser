@@ -24,7 +24,7 @@ public class Factorial extends Operator{
     }
 
     static double factorial(double a){
-        if(a<0){
+        if(a<=0){
             return 1;
         }
         return a*factorial(a-1);
@@ -34,9 +34,9 @@ public class Factorial extends Operator{
     public String toString(){
         if(initialised){
             if(singleton){
-                return "Factorial(" + operand.toString() + ")";
+                return "" + operand.toString() + "";
             } else {
-                return "Factorial(" + operand.toString() + "!)";
+                return "(" + operand.toString() + "!)";
             }
         } else{
             return "!";

@@ -63,7 +63,6 @@ public class Lexer {
             }
             throw new Exception("Character Order Incorrect Or Unrecognised Character in Input");
         }
-        System.out.println(output);
         return output;
     }
 

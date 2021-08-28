@@ -28,9 +28,9 @@ public class Add extends Operator{
     public String toString(){
         if(initialised) {
             if(singleton){
-                return "Add(" + operand1.toString() + ")";
+                return "" + operand1.toString() + "";
             } else {
-                return "Add(" + operand1.toString() + "+" + operand2.toString() + ")";
+                return "(" + operand1.toString() + "+" + operand2.toString() + ")";
             }
         } else{ return "+";}
     }
